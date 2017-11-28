@@ -1,0 +1,1 @@
+gem build onepay.gemspec && gem install onepay-1.0.0.gem

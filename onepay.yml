@@ -1,0 +1,10 @@
+development:
+    alipay:
+        app_id: 12111XXXX
+        mch_id: XXXXXXX
+        notify_url: http://www.geiwan666.com/pay/wx/verify
+    swiftpass:
+        app_id: 12111XXXX
+        mch_id: XXXXXXX
+        key: xxxxx
+        notify_url: http://www.geiwan666.com/pay/wx/verify
