@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    onepay (1.0.0)
+    onepay (1.0.2)
       alipay
-      excon
       rest-client (>= 2.0.0)
 
 GEM
@@ -12,7 +11,6 @@ GEM
     alipay (0.15.0)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
-    excon (0.59.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     mime-types (3.1)

@@ -1,4 +1,4 @@
-require 'excon'
+require 'rest-client'
 require 'active_support/core_ext/hash/conversions'
 require 'active_support/logger'
 
@@ -25,11 +25,12 @@ module Onepay
 
       params = params.merge(sign: md5_sort(params))
 
-      resp = Excon.post(
+      resp = RestClient.post(
         GATEWAY_URL,
-        body: xmlify_payload(params),
-        headers: { 'Content-Type' => 'application/xml' },
-        retry_limit: 6
+        xmlify_payload(params),
+        {
+          accept: :xml
+        }
       )
 
       Rails.logger.fatal GATEWAY_URL

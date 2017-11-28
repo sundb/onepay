@@ -12,7 +12,6 @@ Gem::Specification.new do |gem|
   gem.name          = 'onepay'
   gem.require_paths = ['lib']
 
-  gem.add_runtime_dependency 'excon'
   gem.add_runtime_dependency 'alipay'
   gem.add_runtime_dependency 'rest-client', '>= 2.0.0'
 end
