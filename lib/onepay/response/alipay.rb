@@ -1,12 +1,11 @@
 module Onepay
   class AlipayResponse
-    attr_reader :order_id, :total_fee, :extra_param
+    attr_reader :order_id, :total_fee
 
     def initialize(params)
       @params = params
       @order_id = params['out_trade_no']
       @total_fee = params['total_fee'].to_f
-      @extra_param = params['extra_common_param']
     end
 
     def successful?
@@ -16,6 +15,10 @@ module Onepay
 
     def success_response
       'success'
+    end
+
+    def fail_response
+      'fail'
     end
 
     private

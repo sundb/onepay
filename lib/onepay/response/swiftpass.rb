@@ -16,6 +16,10 @@ module Onepay
       'success'
     end
 
+    def fail_response
+      'fail'
+    end
+
     private
 
     def filter_params(params)
